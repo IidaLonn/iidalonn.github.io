@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GRID-harjoitus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="text/css" rel="stylesheet" href="ravintola.css" >
+</head>
+<body>
+
+    <header id="otsikko" >
+        <h1> Ravintola Lapintaika </h1>
+    </header>
+
+    <aside id="tietoa">
+        <h1>Lounaan hinta:</h1>
+        <h1>11 euroa</h1>
+        <p>sisältää ruokajuoman: vesi, maito, kotikalja</p>
+      <img class="kuvat" src="2keitto.jpg">
+    </aside>
+
+
+    <section id="ruokalista">
+        <h1>Viikon ruokalista:</h1>
+
+        <h3>Maanantai</h3>
+        <p>Juusto-vihanneskeittoa ja kokin sämpylä</p>
+        <p>Paistettua lohta, sinappikastiketta, tilliperunoita ja kasviksia</p>
+        <p>Marjakiisseliä ja hunajakermavaahtoa</p>
+
+        <h3>Tiistai</h3>
+        <p>Kana-fetajustosalaattia ja kokin sämpylä</p>
+        <p>Paistettua punakampelaa, pinaattikastiketta ja perunamuusia</p>
+        <p>Pannukakkua, mansikkahilloa ja kermavaahtoa</p>
+
+        <h3>Keskiviikko</h3>
+        <p>Tomaatti-yrttikeittoa ja kokin sämpylä</p>
+        <p>Kalkkunaleikettä, BBQ-kastiketta, riisiä ja kasviksia </p>
+        <p>Omenapiirakkaa ja vaniljakastiketta</p>
+
+        <h3>Torstai</h3>
+        <p>Rapukeittoa ja kokin sämpylä</p>
+        <p>Poronkäristystä, perunamuusia, puolukkahilloa ja suolakurkkuja </p>
+        <p>Hedelmäsalaattia ja kinuskikastiketta</p>
+
+        <h3>Perjantai</h3>
+        <p>Savulohisalaatti ja kokin sämpylä</p>
+        <p>Naudan paahtopaistia, punaviinikastiketta, kermaperunat ja kasviksia </p>
+        <p>Suklaamousse</p>
+    </section>
+
+    <article id="palaute">
+
+        <h1>Anna palautetta:</h1>
+
+<form action="somePHPpage.php" method="post">
+    <textarea name="message" rows="5" cols="30" id="palautelaatikko"></textarea>
+
+    <fieldset>
+        <legend>Henkilötiedot</legend>
+        Nimi: <br>
+        <input type="text"><br>
+        Puhelinnumero: <br>
+        <input type="text"><br> 
+        <br>
+        <legend>Palautteen tyyppi</legend>
+            <select name="mobile">
+                <option value="valinta">Valitse</option>
+                <option value="postiivinen">Positiivinen</option>
+                <option value="neutraali">Neutraali</option>
+                <option value="negatiivinen">Negatiivinen</option>
+                <option value="muu">Muu</option>
+        </select>
+    </fieldset>
+    <br>
+          <button type="button" onClick="someJSFunc()">Lähetä</button>
+</form>
+
+    <br>
+    </article>
+
+    <div class="images">
+            <img class="ruoka" src="3kakku.jpg">
+            <img class="ruoka" src="4salaatti.jpg">
+
+    </div> 
+
+    <footer id="yhteystiedot">
+        <br>
+        <h1>Yhteystiedot</h1>
+        <p>Ravintola Lapintaika</p>
+        <p> Ravintolakatu 2</p>
+        <p> 98765 LAPINMAA</p>
+        <br>
+        <p>Puh. (012) 345 6789</p>
+        <p>Sähköposti: varaukset@ravintolalapintaika.net</p>
+        <br>
+        <p>Aukioloajat: ma - pe, 10:30 - 15:00</p>
+
+    </footer>
+    </body>
+    </html>

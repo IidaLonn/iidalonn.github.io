@@ -1,0 +1,150 @@
+header { grid-area: header; }
+article { grid-area: main; }
+section { grid-area: section; }
+aside { grid-area: info; }
+footer { grid-area: footer; }
+.images { grid-area: main2; }
+
+@media screen and (min-width: 900px){
+    body {
+        display: grid;
+        grid-template-columns: 270px 15% auto 15% 10%;
+        grid-template-rows: 85px 350px 100px auto;
+
+        grid-template-areas:
+          'header header header header header'      
+          'info section section main main'
+          'footer section section main main'
+          'footer section section main2 main2';
+        grid-gap: 0px;
+        background-color: rgba(150, 183, 243, 0.76);
+        padding: 10px;
+      
+      }
+    }
+
+    @media screen and (min-widht:270px) and (max-width: 900px){
+      body {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-rows: 85px auto 100px auto auto auto;
+  
+          grid-template-areas:
+            'header header header'      
+            'section section section'
+            'info info info'
+            'footer footer footer'
+            'main main main'
+            'main2 main2 main2';
+      
+          grid-gap: 0px;
+          background-color: rgba(150, 183, 243, 0.76);
+          padding: 10px;
+          
+        
+        }
+      }
+
+    header, nav, article, section, aside, footer {
+      border: 0.2em solid rgba(9, 32, 66, 0.322);
+    }
+
+@media screen and (min-widht: 320px) and (max-width: 480px){
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(93, 160, 223, 0.747);
+      padding: 3px;
+      font-size: 10px;
+      
+      }
+
+      aside {
+        display: none;
+      }
+    }
+
+@media screen and (min-widht: 0px) and (max-width: 320px){
+        body {
+          width: 270px;
+          
+        }
+      }
+
+#otsikko {
+text-align: center;
+background-color: rgba(164, 195, 231, 0.678);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#tietoa {
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.kuvat {
+  max-width: 90%;
+}
+
+#ruokalista {
+text-align: center;
+background-color: rgba(255, 255, 255, 0.767);
+padding: 30px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#palaute {
+border: rgb(0, 0, 0);
+text-align: center;
+background-image: url(banneri.jpg);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+padding-top: 5px;
+}
+
+#palautelaatikko {
+  max-width: 90%;
+  min-width: 90%;
+  max-height: 35%;
+  min-height: 30%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.main {
+max-width:40%;
+}
+
+
+#yhteystiedot {
+padding-left: 15px;
+background-color: rgba(240, 248, 255, 0.979);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.images > img {
+  max-width: 90%;
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 15px;
+
+
+}
+
+.images {
+background-color: aliceblue;
+
+}
+body, html {
+  height: 100%;
+  background-image: url("taustakuva.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  height: auto;
+  
+}
+
+

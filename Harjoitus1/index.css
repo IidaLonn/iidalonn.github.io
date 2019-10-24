@@ -1,0 +1,113 @@
+body.espanja {
+    background-image: url("taustalippu.png");
+}
+
+body.ruotsi {
+    background-image: url("ruotsitausta.png");
+    
+}
+
+body.tshekki {
+    background-image: url("tshekkitausta.png");
+}
+
+.infocontainer {
+    display: flex;
+}
+
+.info {
+    padding: 20px;
+}
+
+#maa {
+    color: black;
+    text-align: center;
+    margin: 20px
+}
+
+#tietoa {
+max-width: 420px;
+background-color: rgba(222, 228, 235, 0.192)
+
+}
+
+.teksticontainer {
+    display: flex;
+    padding: 30px;
+    max-width: 90%;
+    background-color: rgba(220, 221, 224, 0.26);
+    margin: 10px;
+    width: 600px
+    
+}
+
+img {
+    max-width: 290px;
+    max-height: 290px;
+}
+
+.tietoa {
+    font-family: Verdana, Arial;
+    width: 10px;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 10px;
+}
+
+.lippu {
+    width: 20%;
+    font-family: Verdana, Arial;
+}
+
+.kaupungit {
+    width: 20%;
+    font-family: Verdana, Arial;
+
+}
+
+table, td, th {
+    border: solid;
+    border-collapse: collapse;
+    background:rgba(255, 255, 255, 0.13);
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
+    padding: 1;
+}
+
+.tekstiyksi {
+    width: 20px;
+    font-family: Verdana, Arial;
+
+}
+
+.instagram {
+    width: 20%;
+    font-family: Verdana, Arial;
+
+}
+
+.navbar {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbutton {
+    display:inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.navbutton:hover, .navbutton:active {
+    background-color: rgb(184, 184, 184);
+}
